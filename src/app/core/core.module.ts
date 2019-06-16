@@ -1,12 +1,13 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import {NgModule} from '@angular/core';
 
-import { CoreRoutingModule } from './core-routing.module';
+import {CoreRoutingModule} from './core-routing.module';
+import {HeaderComponent} from './presentational/header/header.component';
+import {SharedModule} from '../shared/shared.module';
 
 @NgModule({
-  declarations: [],
+  declarations: [HeaderComponent],
   imports: [
-    CommonModule,
+    SharedModule,
     CoreRoutingModule
   ]
 })
