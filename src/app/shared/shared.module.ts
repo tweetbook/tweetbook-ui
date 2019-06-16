@@ -4,20 +4,23 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {RouterModule} from '@angular/router';
 import {HttpClientModule} from '@angular/common/http';
 import {MatToolbarModule} from '@angular/material';
+import { PlainRouterOutletComponent } from './plain-router-outlet/plain-router-outlet.component';
 
 const AngularMaterialModules = [
   MatToolbarModule
 ];
 
 @NgModule({
-  declarations: [],
+  declarations: [
+    PlainRouterOutletComponent
+  ],
   imports: [
     CommonModule,
     FormsModule,
     ReactiveFormsModule,
     RouterModule,
     HttpClientModule,
-    ...AngularMaterialModules
+    ...AngularMaterialModules,
   ],
   exports: [
     CommonModule,
@@ -25,7 +28,8 @@ const AngularMaterialModules = [
     ReactiveFormsModule,
     RouterModule,
     HttpClientModule,
-    ...AngularMaterialModules
+    ...AngularMaterialModules,
+    PlainRouterOutletComponent
   ]
 })
 export class SharedModule { }
