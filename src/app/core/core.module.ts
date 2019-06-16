@@ -9,6 +9,9 @@ import {SharedModule} from '../shared/shared.module';
   imports: [
     SharedModule,
     CoreRoutingModule
+  ],
+  exports: [
+    HeaderComponent
   ]
 })
 export class CoreModule { }

@@ -3,6 +3,11 @@ import { CommonModule } from '@angular/common';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {RouterModule} from '@angular/router';
 import {HttpClientModule} from '@angular/common/http';
+import {MatToolbarModule} from '@angular/material';
+
+const AngularMaterialModules = [
+  MatToolbarModule
+];
 
 @NgModule({
   declarations: [],
@@ -11,14 +16,16 @@ import {HttpClientModule} from '@angular/common/http';
     FormsModule,
     ReactiveFormsModule,
     RouterModule,
-    HttpClientModule
+    HttpClientModule,
+    ...AngularMaterialModules
   ],
   exports: [
     CommonModule,
     FormsModule,
     ReactiveFormsModule,
     RouterModule,
-    HttpClientModule
+    HttpClientModule,
+    ...AngularMaterialModules
   ]
 })
 export class SharedModule { }
