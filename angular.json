@@ -119,6 +119,17 @@
           }
         }
       }
-    }},
-  "defaultProject": "tweetbook-ui"
+    }
+  },
+  "defaultProject": "tweetbook-ui",
+  "schematics": {
+    "@schematics/angular": {
+      "component": {
+        "spec": false
+      },
+      "service": {
+        "spec": false
+      }
+    }
+  }
 }
